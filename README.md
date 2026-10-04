@@ -1,7 +1,7 @@
 # 🥗 FUSION — Healthy Lifestyle
 
 <p align="center">
-  <img src="./images/fusionassets/logo.png" alt="FUSION Logo" width="120">
+ <use href="images/icons/sprite.svg#icon-truck"></use>
 </p>
 
 <h1 align="center">🥗 FUSION</h1>
