@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script>(function () { try { var t = localStorage.getItem("fusion_theme") || (matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light"); document.documentElement.setAttribute("data-theme", t); } catch (e) { } })();</script>
+    <title>Meal Details | FUSION — A Healthy Lifestyle</title>
+    <meta name="description"
+        content="Full nutrition breakdown, ingredients, health benefits and customization options for FUSION healthy meals.">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <a class="skip-link" href="#main">Skip to main content</a>
+
+    <div class="promo-bar">
+        <svg class="icon promo-bar__truck" aria-hidden="true">
+            <use href="images/icons/sprite.svg#icon-truck"></use>
+        </svg>
+        <span>Now delivering via <strong>Swiggy</strong> &amp; <strong>Zomato</strong> — order your healthy meal
+            today!</span>
+    </div>
+
+    <header>
+        <nav class="navbar" aria-label="Primary navigation">
+            <div class="container navbar__inner">
+                <a href="index.html" class="navbar__brand">
+                    <span class="navbar__brand-mark" aria-hidden="true"><svg class="icon"
+                            style="width:22px;height:22px;">
+                            <use href="images/icons/sprite.svg#icon-leaf"></use>
+                        </svg></span>
+                    <span>FUSION<span class="navbar__brand-tagline">A Healthy Lifestyle</span></span>
+                </a>
+                <input type="checkbox" id="nav-toggle" class="navbar__toggle-input visually-hidden" aria-hidden="true">
+                <label for="nav-toggle" class="navbar__toggle"
+                    aria-label="Toggle navigation menu"><span></span><span></span><span></span></label>
+                <ul class="navbar__menu" id="primary-menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li class="navbar__dropdown">
+                        <a href="categories.html">Categories <svg class="icon navbar__dropdown__chevron">
+                                <use href="images/icons/sprite.svg#icon-chevron-down"></use>
+                            </svg></a>
+                        <div class="navbar__dropdown__panel navbar__mega-menu">
+                            <div class="navbar__mega-menu__inner">
+                                <div class="navbar__dropdown__col">
+                                    <h4>Fresh &amp; Light</h4>
+                                    <a href="products.html?category=healthy-salads">Healthy Salads</a>
+                                    <a href="products.html?category=veg-rice-bowls">Veg Rice Bowls</a>
+                                    <a href="products.html?category=non-veg-rice-bowls">Non-Veg Rice Bowls</a>
+                                </div>
+                                <div class="navbar__dropdown__col">
+                                    <h4>Bread &amp; Wraps</h4>
+                                    <a href="products.html?category=sandwiches">Sandwiches</a>
+                                    <a href="products.html?category=wraps">Wraps</a>
+                                </div>
+                                <div class="navbar__dropdown__col">
+                                    <h4>Sweet &amp; Drinks</h4>
+                                    <a href="products.html?category=pancakes">Pancakes</a>
+                                    <a href="products.html?category=smoothies">Smoothies</a>
+                                    <a href="products.html?category=healthy-cakes">Healthy Cakes</a>
+                                </div>
+                                <div class="navbar__dropdown__col">
+                                    <h4>Meal Plans</h4>
+                                    <a href="subscription.html">Weekly Plans</a>
+                                    <a href="subscription.html">Monthly Plans</a>
+                                </div>
+                                <a href="categories.html" class="navbar__dropdown__viewall">View All Categories
+                                    &rarr;</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li><a href="products.html" aria-current="page">Meals</a></li>
+                    <li><a href="nutrition.html">Nutrition</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="subscription.html">Subscription</a></li>
+                </ul>
+                <div class="navbar__actions">
+                    <button type="button" class="navbar__icon-btn theme-toggle" id="theme-toggle" aria-pressed="false"
+                        aria-label="Switch to dark mode"><svg class="icon icon--moon">
+                            <use href="images/icons/sprite.svg#icon-moon"></use>
+                        </svg><svg class="icon icon--sun">
+                            <use href="images/icons/sprite.svg#icon-sun"></use>
+                        </svg></button>
+                    <a href="cart.html" class="navbar__icon-btn" id="cart-icon" aria-label="View cart"><svg
+                            class="icon">
+                            <use href="images/icons/sprite.svg#icon-cart"></use>
+                        </svg><span class="navbar__badge" data-cart-count>0</span></a>
+                    <div class="navbar__dropdown navbar__dropdown--account">
+                        <a href="login.html" class="navbar__icon-btn" id="account-icon"
+                            aria-label="Account / Login"><svg class="icon">
+                                <use href="images/icons/sprite.svg#icon-user"></use>
+                            </svg></a>
+                        <div class="navbar__dropdown__panel">
+                            <a href="login.html"><svg class="icon icon--sm">
+                                    <use href="images/icons/sprite.svg#icon-user"></use>
+                                </svg> Login</a>
+                            <a href="signup.html"><svg class="icon icon--sm">
+                                    <use href="images/icons/sprite.svg#icon-user"></use>
+                                </svg> Sign Up</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main id="main">
+        <section class="section--tight">
+            <div class="container">
+                <nav class="breadcrumb" aria-label="Breadcrumb">
+                    <a href="index.html">Home</a><span>/</span><a href="products.html">Meals</a><span>/</span><span
+                        aria-current="page" id="breadcrumb-current">Meal</span>
+                </nav>
+
+                <div class="singlepage-layout">
+
+                    <div class="gallery anim-fade-up" id="product-gallery">
+                        <button type="button" class="gallery__thumb" id="gallery-thumb-1"
+                            aria-label="View front photo"></button>
+                        <button type="button" class="gallery__thumb" id="gallery-thumb-2"
+                            aria-label="View back photo"></button>
+                        <div class="gallery__frame icon-banner icon-banner--primary" id="gallery-main-frame">
+                            <svg class="icon gallery-icon-use" id="gallery-icon-main" aria-hidden="true">
+                                <use href="images/icons/sprite.svg#icon-bowl"></use>
+                            </svg>
+                        </div>
+                    </div>
+
+                    <div class="anim-fade-up delay-1" id="product-info">
+                        <span class="product-card__category" id="product-category-label">Category</span>
+                        <h1 style="margin-top:6px;" id="product-title">Loading meal…</h1>
+                        <div class="flex flex--gap-md mt-sm" style="flex-wrap:wrap;">
+                            <span class="rating" id="product-rating"></span>
+                            <span class="badge badge--healthy">Healthy Choice</span>
+                        </div>
+                        <p class="mt-sm" id="product-description"></p>
+
+                        <div class="flex flex--between mt-md" style="gap:var(--space-md);flex-wrap:wrap;">
+                            <span class="product-card__price" style="font-size:var(--fs-2xl);"
+                                id="product-price">₹0</span>
+                            <span class="tag" id="product-delivery"><svg class="icon icon--xs">
+                                    <use href="images/icons/sprite.svg#icon-truck"></use>
+                                </svg> Delivery</span>
+                        </div>
+
+                        <div class="nutrition-card mt-md" id="nutrition-summary">
+                            <h3 style="font-size:var(--fs-md);">Nutrition Summary</h3>
+                            <div class="nutrition-card__macros" id="nutrition-summary-macros"></div>
+                        </div>
+
+                        <div class="mt-md" id="customization-options">
+                            <h3 style="font-size:var(--fs-md);">Customization Options</h3>
+                            <div class="filter-group mt-sm">
+                                <button type="button" class="filter-chip" aria-pressed="true"
+                                    data-option="regular">Regular</button>
+                                <button type="button" class="filter-chip" data-option="extra-protein">Extra Protein
+                                    (+₹40)</button>
+                                <button type="button" class="filter-chip" data-option="no-onion">No Onion</button>
+                                <button type="button" class="filter-chip" data-option="extra-sauce">Extra Sauce</button>
+                            </div>
+                        </div>
+
+                        <div class="quantity-selector mt-md" id="quantity-selector">
+                            <label for="qty-input" class="visually-hidden">Quantity</label>
+                            <div class="stepper">
+                                <button type="button" id="qty-decrement" data-action="decrement-qty"
+                                    aria-label="Decrease quantity"><svg class="icon icon--sm">
+                                        <use href="images/icons/sprite.svg#icon-minus"></use>
+                                    </svg></button>
+                                <output id="qty-input" for="qty-decrement qty-increment">1</output>
+                                <button type="button" id="qty-increment" data-action="increment-qty"
+                                    aria-label="Increase quantity"><svg class="icon icon--sm">
+                                        <use href="images/icons/sprite.svg#icon-plus"></use>
+                                    </svg></button>
+                            </div>
+                            <button type="button" class="btn btn--primary btn--lg" id="main-add-to-cart-btn"
+                                data-action="add-to-cart">Add To Cart</button>
+                        </div>
+                        <div class="flex flex--gap-md mt-sm" style="flex-wrap:wrap;">
+                            <button type="button" class="btn btn--accent" id="buy-now-btn" data-action="buy-now">Buy
+                                Now</button>
+                            <button type="button" class="btn btn--outline product-card__fav" id="product-wishlist-btn"
+                                data-action="toggle-favorite" aria-pressed="false">
+                                <svg class="icon icon--sm">
+                                    <use href="images/icons/sprite.svg#icon-heart"></use>
+                                </svg> Wishlist
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mt-lg" id="product-tabs">
+                    <input type="radio" name="info-tab" id="tab-1" class="tabs__input" checked>
+                    <input type="radio" name="info-tab" id="tab-2" class="tabs__input">
+                    <input type="radio" name="info-tab" id="tab-3" class="tabs__input">
+                    <input type="radio" name="info-tab" id="tab-4" class="tabs__input">
+                    <input type="radio" name="info-tab" id="tab-5" class="tabs__input">
+
+                    <div class="info-tabs" role="tablist" aria-label="Product information tabs">
+                        <label for="tab-1">Ingredients</label>
+                        <label for="tab-2">Preparation</label>
+                        <label for="tab-3">Health Benefits</label>
+                        <label for="tab-4">Serving &amp; Allergens</label>
+                        <label for="tab-5">Delivery Info</label>
+                    </div>
+
+                    <div class="tabs__panels">
+                        <div class="tabs__panel" data-tab="1" id="tab-ingredients"></div>
+                        <div class="tabs__panel" data-tab="2" id="tab-preparation"></div>
+                        <div class="tabs__panel" data-tab="3" id="tab-benefits"></div>
+                        <div class="tabs__panel" data-tab="4" id="tab-serving"></div>
+                        <div class="tabs__panel" data-tab="5" id="tab-delivery"></div>
+                    </div>
+                </div>
+
+                <div class="section-heading mt-lg reveal">
+                    <p class="eyebrow">You Might Also Like</p>
+                    <h2>Related Healthy Meals</h2>
+                </div>
+                <div class="grid grid--4" id="related-meals-grid" aria-live="polite">
+                    <p class="text-center" style="grid-column:1/-1;">Loading related meals…</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container footer__grid">
+            <div>
+                <span class="footer__brand-mark" aria-hidden="true"><svg class="icon" style="color:#fff;">
+                        <use href="images/icons/sprite.svg#icon-leaf"></use>
+                    </svg></span>
+                <h4>FUSION</h4>
+                <p>Premium healthy food delivery and nutrition tracking, crafted for a balanced lifestyle.</p>
+                <div class="footer__socials">
+                    <a href="#" aria-label="FUSION on Instagram"><svg class="icon icon--sm">
+                            <use href="images/icons/sprite.svg#icon-instagram"></use>
+                        </svg></a>
+                    <a href="#" aria-label="FUSION on Facebook"><svg class="icon icon--sm">
+                            <use href="images/icons/sprite.svg#icon-facebook"></use>
+                        </svg></a>
+                    <a href="#" aria-label="FUSION on Twitter"><svg class="icon icon--sm">
+                            <use href="images/icons/sprite.svg#icon-twitter"></use>
+                        </svg></a>
+                    <a href="#" aria-label="FUSION on YouTube"><svg class="icon icon--sm">
+                            <use href="images/icons/sprite.svg#icon-youtube"></use>
+                        </svg></a>
+                </div>
+            </div>
+            <div>
+                <h4>Quick Links</h4>
+                <ul class="footer__links">
+                    <li><a href="about.html">About Fusion</a></li>
+                    <li><a href="about.html#journal">Blog</a></li>
+                    <li><a href="subscription.html">Subscription</a></li>
+                    <li><a href="profile.html">My Account</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4>Healthy Categories</h4>
+                <ul class="footer__links">
+                    <li><a href="categories.html">Salads</a></li>
+                    <li><a href="categories.html">Rice Bowls</a></li>
+                    <li><a href="categories.html">Smoothies</a></li>
+                    <li><a href="categories.html">Wraps</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4>Customer Support</h4>
+                <p><svg class="icon icon--sm">
+                        <use href="images/icons/sprite.svg#icon-clock"></use>
+                    </svg> Mon &ndash; Sun, 7am &ndash; 11pm</p>
+                <p><svg class="icon icon--sm">
+                        <use href="images/icons/sprite.svg#icon-phone"></use>
+                    </svg> +91 98765 43210</p>
+                <p><svg class="icon icon--sm">
+                        <use href="images/icons/sprite.svg#icon-envelope"></use>
+                    </svg> support@fusion.health</p>
+            </div>
+        </div>
+        <div class="container footer__bottom">
+            <p>&copy; 2026 FUSION. All rights reserved.</p>
+            <p>Designed with <svg class="icon icon--xs" style="color:var(--color-secondary);">
+                    <use href="images/icons/sprite.svg#icon-leaf"></use>
+                </svg> for a healthier tomorrow.</p>
+        </div>
+    </footer>
+
+    <a href="#main" class="back-to-top" aria-label="Back to top">↑</a>
+
+    <script src="./app.js" defer></script>
+</body>
+
+</html>
