@@ -1,9 +1,5 @@
 # 🥗 FUSION — Healthy Lifestyle
 
-<p align="center">
- <img href="images/icons/sprite.svg">
-</p>
-
 <h1 align="center">🥗 FUSION</h1>
 
 <h3 align="center">
