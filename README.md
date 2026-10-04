@@ -1034,4 +1034,3 @@ This project is created for educational, demonstration and portfolio purposes.
 🌱 **Eat Healthy. Live Healthy.**
 
 </p>
-```
