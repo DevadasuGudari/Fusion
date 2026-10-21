@@ -3,7 +3,7 @@
 <h1 align="center">🥗 FUSION</h1>
 
 <h3 align="center">
-  Eat Better • Live Healthier • Feel Better
+ Eat Better • Live Healthier • Feel Better
 </h3>
 
 <p align="center">
